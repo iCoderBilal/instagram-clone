@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from './App.js';
+import App from './App';
 import FirebaseContext from "./context/firebase.js";
+import {fireBase, FieldValue} from "./lib/firebase.js";
 
 ReactDOM.render( 
-<FirebaseContext.Provider value={{firebase, FieldValue}}>
+<FirebaseContext.Provider value={{fireBase, FieldValue}}>
 <App/>
 </FirebaseContext.Provider>
 
